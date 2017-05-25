@@ -1,0 +1,84 @@
+html,body {
+    margin: 0;
+    height: 100%;
+}
+
+body {  
+    background-color: gray;
+}
+
+ul,ol { 
+    list-style: none;
+    padding: 0;
+}
+
+.header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 10px;
+}
+
+.sidebar { 
+    width: 350px;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: floralwhite;
+    background-color: rosybrown;    
+}
+
+.profile-info { 
+    background-color: dimgray;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-profile-image {
+    max-width: 150px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.navigation {
+     padding: 20px;
+}
+
+.navigation-list {  
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+.navigation-list-item {
+    padding: 20px;
+}
+
+.navigation-list-item:hover {   
+    color: darkslategray;
+    cursor: crosshair;
+    box-shadow: 0 0 10px black;
+}
+
+.navigation-list-item span {
+    display: inline-block;
+}
+
+.navigation-icon {
+    width: 23%;
+    text-align: center;
+}
+
+.navigation-text {
+    width: 75%;
+}
+
+.portfolio-dashboard {  
+    padding: 40px;
+    width: calc(99.6% - 350px);
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    color: floralwhite;
+}
