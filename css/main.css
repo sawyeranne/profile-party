@@ -1,13 +1,15 @@
-html,body {
+html,
+body {
     margin: 0;
     height: 100%;
 }
 
-body {  
+body {
     background-color: gray;
 }
 
-ul,ol { 
+ul,
+ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -23,175 +25,176 @@ p {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.header {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    text-shadow: 0 0 10px;
-}
-
-.sidebar { 
-    width: 100%;
+.sidebar {
     box-sizing: border-box;
     color: floralwhite;
-    background-color: rosybrown;  
-    float: left; 
-}
-
-.portfolio-dashboard {  
-    width: 100%;
-    box-sizing: border-box;
-    color: floralwhite;
+    background-color: rosybrown;
     float: left;
 }
 
-.profile-info { 
-    background-color: dimgray;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: center;
+@media(max-width: 825px) {
+    .sidebar {
+        width: 100%;
+        /*box-sizing: border-box;
+        color: floralwhite;
+        background-color: rosybrown;
+        float: left;*/
+    }
+    .header {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 20px;
+        text-shadow: 0 0 10px;
+    }
+    .portfolio-dashboard {
+        width: 100%;
+        box-sizing: border-box;
+        color: floralwhite;
+        float: left;
+    }
+    .profile-info {
+        background-color: dimgray;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .sidebar-profile-image {
+        max-width: 100px;
+        border-radius: 100px;
+        box-shadow: 4px 4px 10px black;
+    }
+    .navigation-list {
+        font-family: 'Dosis', sans-serif;
+        margin: 0;
+    }
+    .navigation-list-item {
+        /*padding: 20px;*/
+        box-sizing: border-box;
+        float: left;
+        width: calc(100%/4);
+        text-align: center;
+        padding: 16px 0;
+    }
+    .navigation-list-item .navigation-text {
+        display: none;
+    }
+    .portfolio-dashboard-header {
+        text-align: center;
+    }
+    .thumbnails {
+        width: 100%;
+    }
+    .thumbnail {
+        display: inline-block;
+        width: 100%;
+        float: left;
+    }
+    .thumbnail .thumbnail-image {
+        width: 100%;
+        height: 300px;
+    }
+    .thumbnail .thumbnail-one {
+        background-image: url('http://www.slate.com/content/dam/slate/blogs/outward/2015/09/22/showgirls_20th_anniversary_in_praise_of_nomi_malone_and_elizabeth_berkley/showgirls.jpg.CROP.promovar-mediumlarge.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-two {
+        background-image: url('http://images4.static-bluray.com/reviews/460_4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-three {
+        background-image: url('http://cdn-static.denofgeek.com/sites/denofgeek/files/starship-troopers.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-four {
+        background-image: url('http://www.joblo.com/images_arrownews/paul-verhoeven-remakes.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
-.sidebar-profile-image {
-    max-width: 100px;
-    border-radius: 100px;
-    box-shadow: 4px 4px 10px black;
+@media(min-width: 825px) {
+    .sidebar {
+        width: 350px;
+        height: 100%;
+        display: inline-block;
+        /*box-sizing: border-box;
+        color: floralwhite;
+        background-color: rosybrown;
+        float: left;*/
+    }
+    .portfolio-dashboard {
+        padding: 40px;
+        width: calc(99.6% - 350px);
+        height: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        color: floralwhite;
+        float: left;
+    }
+    .profile-info {
+        background-color: dimgray;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .sidebar-profile-image {
+        max-width: 150px;
+        border-radius: 100px;
+        box-shadow: 4px 4px 10px black;
+    }
+    .navigation {
+        padding: 20px;
+    }
+    .navigation-list {
+        font-family: 'Dosis', sans-serif;
+        margin: 0;
+    }
+    .navigation-list-item {
+        padding: 20px;
+    }
+    .navigation-list-item:hover {
+        color: darkslategray;
+        cursor: crosshair;
+        box-shadow: 0 0 10px black;
+    }
+    .navigation-list-item span {
+        display: inline-block;
+    }
+    .navigation-icon {
+        width: 23%;
+        text-align: center;
+    }
+    .navigation-text {
+        width: 75%;
+    }
+    .thumbnail {
+        display: inline-block;
+        width: 400px;
+    }
+    .thumbnail .thumbnail-image {
+        width: 100%;
+        height: 300px;
+    }
+    .thumbnail .thumbnail-one {
+        background-image: url('http://www.slate.com/content/dam/slate/blogs/outward/2015/09/22/showgirls_20th_anniversary_in_praise_of_nomi_malone_and_elizabeth_berkley/showgirls.jpg.CROP.promovar-mediumlarge.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-two {
+        background-image: url('http://images4.static-bluray.com/reviews/460_4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-three {
+        background-image: url('http://cdn-static.denofgeek.com/sites/denofgeek/files/starship-troopers.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .thumbnail .thumbnail-four {
+        background-image: url('http://www.joblo.com/images_arrownews/paul-verhoeven-remakes.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
-
-.navigation-list {  
-    font-family: 'Dosis', sans-serif;
-    margin: 0;
-}
-
-.navigation-list-item {
-    /*padding: 20px;*/
-    box-sizing: border-box;
-    float: left;
-    width: calc(100%/4);
-    text-align: center;
-    padding: 16px 0;
-}
-
-.navigation-list-item .navigation-text {    
-    display: none;
-}
-
-.portfolio-dashboard-header {
-    text-align: center;
-}
-
-.thumbnails {   
-    width: 100%;
-}
-
-.thumbnail {    
-    display: inline-block;
-    width: 100%;
-    float: left;
-}
-
-.thumbnail .thumbnail-image {   
-    width: 100%;
-    height: 300px;
-}
-
-.thumbnail .thumbnail-one {                background-image: url('http://www.slate.com/content/dam/slate/blogs/outward/2015/09/22/showgirls_20th_anniversary_in_praise_of_nomi_malone_and_elizabeth_berkley/showgirls.jpg.CROP.promovar-mediumlarge.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.thumbnail .thumbnail-two {                background-image: url('http://images4.static-bluray.com/reviews/460_4.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.thumbnail .thumbnail-three {                background-image: url('http://cdn-static.denofgeek.com/sites/denofgeek/files/starship-troopers.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.thumbnail .thumbnail-four {                background-image: url('http://www.joblo.com/images_arrownews/paul-verhoeven-remakes.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/*
-.sidebar { 
-    width: 350px;
-    height: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    color: floralwhite;
-    background-color: rosybrown;   
-    float: left; 
-}
-
-.portfolio-dashboard {  
-    padding: 40px;
-    width: calc(99.6% - 350px);
-    height: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    color: floralwhite;
-    float: left;
-}
-
-.profile-info { 
-    background-color: dimgray;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.sidebar-profile-image {
-    max-width: 150px;
-    border-radius: 100px;
-    box-shadow: 4px 4px 10px black;
-}
-
-.navigation {
-     padding: 20px;
-}
-
-.navigation-list {  
-    font-family: 'Dosis', sans-serif;
-    margin: 0;
-}
-
-.navigation-list-item {
-    padding: 20px;
-}
-
-.navigation-list-item:hover {   
-    color: darkslategray;
-    cursor: crosshair;
-    box-shadow: 0 0 10px black;
-}
-
-.navigation-list-item span {
-    display: inline-block;
-}
-
-.navigation-icon {
-    width: 23%;
-    text-align: center;
-}
-
-.navigation-text {
-    width: 75%;
-}
-
-.thumbnail {    
-    display: inline-block;
-    width: 400px;
-}
-
-.thumbnail .thumbnail-image {   
-    width: 100%;
-    height: 300px;
-}
-
-.thumbnail .thumbnail-one {                background-image: url('https://www.sideshowtoy.com/wp-content/uploads/2013/06/901935-product-feature.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-*/
